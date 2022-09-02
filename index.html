@@ -46,7 +46,7 @@
   <section class="headerbar">
     <div class="container ">
       <h1 class="headerbar-titlle">Ефективні рішення для <br /> вашого бізнесу</h1>
-      <button type="button" class="headerbar-btn">Замовити послугу</button>
+      <button class="headerbar-btn" type="button" data-modal-open>Замовити послугу</button>
     </div>
   </section>
 
@@ -85,16 +85,19 @@
       <h2 class="h2-trend">Чим ми займаємося</h2>
       <ul class="trend">
         <!--box 1-->
-        <li class="item">
+        <li class="item-trend">
           <img src="./images/box-1.jpg" alt="Програмування" width="370" />
+          <h3 class="groundwork">Десктопні додатки</h3>
         </li>
         <!--box 2-->
-        <li class="item">
+        <li class="item-trend">
           <img src="./images/box-2.jpg" alt="Розробка" width="370" />
+          <h3 class="groundwork">Мобільні додатки</h3>
         </li>
         <!--box 3-->
-        <li class="item">
+        <li class="item-trend">
           <img src="./images/box-3.jpg" alt="Дизайн" width="370" />
+          <h3 class="groundwork">Дизайнерські рішення</h3>
         </li>
       </ul>
     </div>
@@ -339,6 +342,20 @@
     </div>
   </div>
 </footer>
+
+<!--Модальне вікно-->
+<div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-close">
+        <button class="modal-btn" data-modal-close>
+          <svg class="close-icon" width="18" height="18"><use href="./images/icons.svg#close-black"></use></svg>
+        </button>
+        </div>
+        <p>
+        </p>
+      </div>
+
+<script src="./js/modal.js"></script>
 
 </body>
 </html>
